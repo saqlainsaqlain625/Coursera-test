@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Module 2 Solution</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/desktop.css" />
+  <!-- <link rel="stylesheet" href="css/tablet.css" /> -->
+<!-- <link rel="stylesheet" href="css/mobile.css" /> -->
 </head>
 <body>
-  <h1>Our Menu</h1>
+  <header class="container">
+    <h1>Our Menu</h1>
+    <nav class="view-nav">
+      <a href="desktop.html">Desktop</a>
+      <a href="tablet.html">Tablet</a>
+      <a href="mobile.html">Mobile</a>
+    </nav>
+  </header>
 
-  <div class="row">
-    <section class="col col-3">
-      <div class="section-title chicken">Chicken</div>
+  <main class="row container">
+    <section class="card">
+      <div class="title chicken">Chicken</div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat
         lorem at erat fringilla, ac convallis nisl laoreet.
       </p>
     </section>
 
-    <section class="col col-3">
-      <div class="section-title beef">Beef</div>
+    <section class="card">
+      <div class="title beef">Beef</div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat
         lorem at erat fringilla, ac convallis nisl laoreet.
       </p>
     </section>
 
-    <section class="col col-3">
-      <div class="section-title sushi">Sushi</div>
+    <section class="card">
+      <div class="title sushi">Sushi</div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat
         lorem at erat fringilla, ac convallis nisl laoreet.
       </p>
     </section>
-  </div>
+  </main>
 </body>
 </html>
-
