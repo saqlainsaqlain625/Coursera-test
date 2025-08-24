@@ -16,8 +16,13 @@ This repository contains my **Module 2 Coding Assignment** for the Coursera cour
 ## 📸 Preview  
 
 Here is a screenshot of the responsive website (Desktop Layout):  
+Here is the mockup illustration of the desktop version of the site. Your final result should look very close to this mockup.
+![Website Preview](https://github.com/saqlainsaqlain625/Coursera-test/blob/main/module2-solution/image/Screenshot%202025-08-22%20122405.png) 
+Here is the mockup illustration of the tablet version of the site. Your final result should look very close to this mockup. Note that in this view, the 3rd section takes up the entire row.
+![Website Preview](https://github.com/saqlainsaqlain625/Coursera-test/blob/main/module2-solution/image/tablet%20pic.png)  
+Here is the mockup illustration of the mobile version of the site. Your final result should look very close to this mockup.
+![Website Preview](https://github.com/saqlainsaqlain625/Coursera-test/blob/main/module2-solution/image/Mobile.png)  
 
-![Website Preview](https://github.com/saqlainsaqlain625/Coursera-test/blob/main/module2-solution/image/Screenshot%202025-08-22%20122405.png)  
 
 *(Make sure you add a screenshot named `preview.png` inside the `module2-solution/images/` folder so it shows up here.)*  
 
