@@ -1,82 +1,65 @@
-/* General Styling */
-* {
-  box-sizing: border-box;
+/* Reset + base */
+* { box-sizing: border-box; }
+
+:root {
+  --gap: 16px;
+  --border: 1px solid #000;
+  --bg: #f7f7f7;
+  --title-pad: 6px 12px;
+  --card-pad: 48px 16px 16px 16px;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+html, body { margin: 0; padding: 0; font-family: Arial, sans-serif; background: #fff; color: #111; }
 
-h1 {
-  text-align: center;
-  font-size: 2em;
-  margin: 20px 0;
-}
+.container { width: min(1200px, 100%); padding: 0 12px; margin: 0 auto; }
 
-.row {
-  width: 100%;
-  overflow: hidden;
-  padding: 10px;
-}
+h1 { text-align: center; margin: 24px 0 8px; font-size: 2rem; }
 
-section {
-  border: 1px solid black;
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 40px 15px 15px 15px; /* Extra padding-top for title */
+.view-nav { text-align: center; margin-bottom: 16px; }
+.view-nav a { display: inline-block; margin: 0 6px; text-decoration: none; border-bottom: 1px dashed #555; color: #333; }
+
+.row { display: block; }
+
+.card {
   position: relative;
+  background: var(--bg);
+  border: var(--border);
+  padding: var(--card-pad);
+  margin: var(--gap);
+  min-height: 160px;
 }
 
-/* Section Titles */
-.section-title {
+.title {
   position: absolute;
-  top: 0;
-  right: 0;
-  border: 1px solid black;
-  padding: 5px 10px;
+  top: 0; right: 0;
+  border: var(--border);
+  padding: var(--title-pad);
   font-weight: bold;
 }
 
-.chicken {
-  background-color: #f8c471; /* Orange */
+.title.chicken { background: #f8c471; }
+.title.beef    { background: #e74c3c; color: #fff; }
+.title.sushi   { background: #5dade2; color: #fff; }
+
+/* Dekstop */
+
+.card { float: left; width: calc((100% - (var(--gap) * 6)) / 3); }
+@media (max-width: 991px) {
+  .card { width: calc((100% - (var(--gap) * 6)) / 3); }
 }
 
-.beef {
-  background-color: #e74c3c; /* Red */
-  color: white;
-}
 
-.sushi {
-  background-color: #5dade2; /* Blue */
-  color: white;
-}
+/* Tablet */
+/* .card { float: left; }
+.card:nth-of-type(1),
+.card:nth-of-type(2) {
+  width: calc((100% - (var(--gap) * 5)) / 2);
+} */
 
-/* Desktop View (>=992px) */
-@media (min-width: 992px) {
-  .col-3 {
-    float: left;
-    width: 31%; /* 3 sections side by side */
-  }
-}
 
-/* Tablet View (768px - 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-3 {
-    float: left;
-    width: 48%; /* Two in first row */
-  }
-  .col-3:nth-child(3) {
-    width: 98%; /* Third full width */
-  }
-}
-
-/* Mobile View (<=767px) */
-@media (max-width: 767px) {
-  .col-3 {
-    float: none;
-    width: 98%; /* Each takes full row */
-  }
-}
+/* Mobile  */
+/* .card {
+  float: none;
+  width: calc(100% - (var(--gap) * 2));
+} */
 
