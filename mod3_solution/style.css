@@ -1,0 +1,81 @@
+        body {
+            background-color: #aaa;
+            padding: 20px;
+        }
+        .browser-mockup {
+            border: 1px solid #000;
+            background-color: #888;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .browser-header {
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+        }
+        .browser-header .controls {
+            display: flex;
+            gap: 5px;
+            margin-right: 15px;
+        }
+        .browser-header .icon {
+            width: 24px;
+            height: 24px;
+            fill: #000;
+            stroke: #000;
+            stroke-width: 2;
+        }
+        .browser-header .address-bar {
+            flex-grow: 1;
+            padding: 5px 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        .browser-header .search-icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 10px;
+        }
+        .tall-section {
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            padding: 20px;
+            height: 1000px;
+            margin-top: 15px;
+        }
+        .menu-title {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        /* Mobile-first styling for hamburger menu */
+        @media (max-width: 767.98px) {
+            .navbar-collapse {
+                background-color: white;
+                border: 1px solid #ccc;
+            }
+            .navbar-collapse .navbar-nav {
+                margin: 0;
+            }
+            .navbar-collapse .nav-item {
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+            }
+            .navbar-collapse .nav-link {
+                padding: 10px 15px;
+            }
+        }
+        /* Center menu sections in mobile view */
+        @media (max-width: 767.98px) {
+            .col-12 {
+                float: none;
+                margin: 0 auto;
+                max-width: 90%;
+            }
+        }
